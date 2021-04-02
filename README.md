@@ -2,8 +2,8 @@
 
 **npm imports** provides completions for npm dependencies found in your `package.json`.
 
-![](Screenshots/import.png)
-![](Screenshots/require.png)
+![](import.png)
+![](require.png)
 
 ### Configuration
 

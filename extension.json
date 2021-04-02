@@ -1,7 +1,7 @@
 {
-  "identifier": "org.npmimports",
+  "identifier": "mockadillo.npmimports",
   "name": "npm imports",
-  "organization": "Nenad Lukic",
+  "organization": "mockadillo",
   "description": "A helpful tool that completes imports based on the packages found in your package.json.",
   "version": "1.0",
   "categories": ["completions"],
@@ -11,7 +11,7 @@
   "main": "main.js",
   "configWorkspace": [
     {
-      "key": "org.npmimports.quote-configuration",
+      "key": "mockadillo.npmimports.quote-configuration",
       "title": "Quote type",
       "description": "Whether to use single quotes or double quotes to surround imports.",
       "type": "enum",

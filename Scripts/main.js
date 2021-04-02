@@ -1,8 +1,15 @@
 const packageFileName = nova.path.join(nova.workspace.path, "package.json");
 let quoteConfig = nova.workspace.config.get(
-  "org.npmimports.quote-configuration"
+  "mockadillo.npmimports.quote-configuration"
 );
 let timer = null;
+
+nova.workspace.config.onDidChange(
+  "mockadillo.npmimports.quote-configuration",
+  (curr, prev) => {
+    quoteConfig = curr;
+  }
+);
 
 const loadPackages = (fileContents) => {
   const packageContents = JSON.parse(fileContents);
